@@ -16,6 +16,7 @@
   font-family: "playfair_displayregular", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
   --body-hor-margin: 10rem;
+  --body-ver-margin: 4rem;
 }
 
 body {
@@ -23,7 +24,10 @@ body {
     rgba(249, 243, 29, 1) 0%,
     rgba(239, 0, 255, 1) 100%
   );
-  margin: 2rem var(--body-hor-margin);
+}
+
+main {
+  margin: var(--body-ver-margin) var(--body-hor-margin);
 }
 
 header {
@@ -58,4 +62,15 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(255, 227, 69);
+  padding: var(--body-ver-margin) var(--body-hor-margin);
+}
+
+.bitmoji-portrait {
+  justify-self: center;
 }
