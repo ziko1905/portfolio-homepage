@@ -112,6 +112,10 @@ header {
   gap: 1.5rem;
 }
 
+.project-img {
+  min-width: 100%;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;

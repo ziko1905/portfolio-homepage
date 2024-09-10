@@ -2,10 +2,11 @@ import { GeneralLinks, LoadProjects } from "./load";
 import "./styles.css";
 
 class Project {
-    constructor (title, description, imgSrc="#",) {
+    constructor (title, description, imgSrc="placeholder-image.png",) {
         this.title = title;
         this.description = description;
-        this.imgSrc = imgSrc;
+        this.imgSrc = require(`../media/images/${imgSrc}`);
+        
     }
 }
 

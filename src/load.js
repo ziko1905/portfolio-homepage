@@ -12,6 +12,8 @@ class ProjectElement {
         main.className = "project-div";
         main.classList.add("shadow");
         main.classList.add("content-div");
+        img.src = prj.imgSrc;
+        img.classList.add("project-img")
         title.textContent = prj.title;
         description.textContent = prj.description
         
