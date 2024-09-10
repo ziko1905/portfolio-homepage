@@ -17,6 +17,14 @@
     "Arial Narrow", Arial, sans-serif;
 }
 
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(249, 243, 29, 1) 0%,
+    rgba(239, 0, 255, 1) 100%
+  );
+}
+
 header {
   display: grid;
   grid-template-columns: 400px 1fr;
@@ -35,4 +43,8 @@ header {
 
 .shadow-chl > * {
   box-shadow: 0 0 6px -3px;
+}
+
+.content-div {
+  background-color: rgb(255, 255, 255);
 }
