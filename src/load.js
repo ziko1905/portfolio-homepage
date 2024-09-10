@@ -6,6 +6,7 @@ class ProjectElement {
 
         const main = document.createElement("div");
         const img = document.createElement("img");
+        const descDiv = document.createElement("div");
         const title = document.createElement("h4");
         const description = document.createElement("p");
 
@@ -14,12 +15,15 @@ class ProjectElement {
         main.classList.add("content-div");
         img.src = prj.imgSrc;
         img.classList.add("project-img")
+        descDiv.className = "desc-div"
         title.textContent = prj.title;
         description.textContent = prj.description
         
+
+        descDiv.appendChild(title);
+        descDiv.appendChild(description);
         main.appendChild(img);
-        main.appendChild(title);
-        main.appendChild(description);
+        main.appendChild(descDiv);
 
         return main
     }
