@@ -29,6 +29,9 @@ body {
 
 main {
   margin: var(--body-ver-margin) var(--body-hor-margin);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 header {
@@ -80,7 +83,8 @@ header {
 
 .about-me-links {
   position: absolute;
-  --links-height: 2rem;
+  --links-height: 3rem;
+  gap: 1rem;
   bottom: 1rem;
   right: 1rem;
 }
@@ -107,10 +111,14 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+.work h3 {
+  font-size: 3rem;
+}
+
 .projects-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .desc-div {
@@ -122,8 +130,14 @@ header {
   padding: 1rem;
 }
 
+.project-div .desc-div h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
 .project-div .desc-div p {
   color: var(--grey-clr);
+  margin-bottom: 5rem;
 }
 
 .project-img {
@@ -131,10 +145,10 @@ header {
 }
 
 .project-links {
-  --links-height: 1.7rem;
+  --links-height: 2rem;
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 2rem;
 }
 
 footer {
