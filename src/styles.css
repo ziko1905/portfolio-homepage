@@ -194,4 +194,9 @@ footer a:hover {
     --body-hor-margin: 5rem;
     --body-ver-margin: 2rem;
   }
+  .projects-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
 }
