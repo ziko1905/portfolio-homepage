@@ -30,3 +30,41 @@ export class LoadProjects {
         });
     }
 }
+
+export class GeneralLinks {
+    constructor (objList, specificClass) {
+        this.main = document.createElement("div");
+
+        this.main.classList.add("links-div");
+        if (specificClass) this.main.classList.add(specificClass);
+
+        objList.forEach(link => {
+            const linkElem = new MediaLink(link);
+            this.main.appendChild(linkElem.getElement());
+        })
+    }
+    load (elemToLoad) {
+        elemToLoad.appendChild(this.main)
+    }
+    getElement () {
+        return this.main
+    }
+}
+
+class MediaLink {
+    constructor (linkObj) {
+        this.main = document.createElement("a");
+        this.img = document.createElement("img");
+        this.main.href = linkObj.url;
+        this.img.src = linkObj.imgSrc;
+        this.img.alt = linkObj.alt;
+        this.main.appendChild(this.img)
+        this.style();
+    }
+    style () {
+        this.img.classList.add("icon");
+    }
+    getElement () {
+        return this.main
+    }
+}

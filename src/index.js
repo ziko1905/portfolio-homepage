@@ -1,4 +1,4 @@
-import { LoadProjects } from "./load";
+import { GeneralLinks, LoadProjects } from "./load";
 import "./styles.css";
 
 class Project {
@@ -20,3 +20,12 @@ export const projectLst = [
 
 const MAIN_PROJECTS_DIV = document.querySelector(".projects-div")
 LoadProjects.load(projectLst, MAIN_PROJECTS_DIV);
+
+const ABOUT_ME_LINKS = [
+    {url: "https://github.com/ziko1905?tab=repositories", imgSrc:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", alt: "My github"},
+    {url: "https://www.linkedin.com/in/karlo-%C4%8Dehuli%C4%87-65337820b/", imgSrc:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg", alt: "My linkedin"},
+    {url: "https://leetcode.com/u/Karlo19/", imgSrc: "https://www.svgrepo.com/show/306328/leetcode.svg", alt: "My leetcode"},
+]
+
+const AboutMeLinks = new GeneralLinks(ABOUT_ME_LINKS, "about-me-links");
+AboutMeLinks.load(document.querySelector(".about-div"))

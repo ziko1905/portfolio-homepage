@@ -57,6 +57,7 @@ header {
 .about-div {
   padding: 1.4rem;
   margin: 2rem 0;
+  position: relative;
 }
 
 .about-div h2 {
@@ -66,6 +67,31 @@ header {
 .about-div p {
   font-size: 1.8rem;
   color: rgb(63, 63, 63);
+}
+
+.links-div {
+  --links-height: 1.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: var(--links-height);
+  gap: 10px;
+}
+
+.about-me-links {
+  position: absolute;
+  --links-height: 2rem;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.icon {
+  object-fit: contain;
+  height: 100%;
+}
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(21%) saturate(6451%)
+    hue-rotate(10deg) brightness(92%) contrast(96%);
 }
 
 .shadow {
