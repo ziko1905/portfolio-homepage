@@ -114,6 +114,7 @@ header {
 }
 
 .desc-div {
+  position: relative;
   background-color: rgb(254, 240, 255);
 }
 
@@ -127,6 +128,13 @@ header {
 
 .project-img {
   min-width: 100%;
+}
+
+.project-links {
+  --links-height: 1.7rem;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
 }
 
 footer {

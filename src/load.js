@@ -7,7 +7,7 @@ class ProjectElement {
         const main = document.createElement("div");
         const img = document.createElement("img");
         const descDiv = document.createElement("div");
-        const title = document.createElement("h4");
+        this.title = document.createElement("h4");
         const description = document.createElement("p");
 
         main.className = "project-div";
@@ -16,16 +16,21 @@ class ProjectElement {
         img.src = prj.imgSrc;
         img.classList.add("project-img")
         descDiv.className = "desc-div"
-        title.textContent = prj.title;
+        this.title.textContent = prj.title;
         description.textContent = prj.description
         
 
-        descDiv.appendChild(title);
+        descDiv.appendChild(this.title);
         descDiv.appendChild(description);
         main.appendChild(img);
-        main.appendChild(descDiv);
+        main.appendChild(descDiv)
+        this.createLinks(descDiv);
 
         return main
+    }
+    createLinks (elem) {
+        const links = new GeneralLinks(this.prj.getLinks(), "project-links")
+        elem.appendChild(links.getElement())
     }
 } 
 

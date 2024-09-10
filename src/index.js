@@ -2,11 +2,18 @@ import { GeneralLinks, LoadProjects } from "./load";
 import "./styles.css";
 
 class Project {
-    constructor (title, description, imgSrc="placeholder-image.png",) {
+    constructor (title, description, imgSrc="placeholder-image.png", gitRepo="https://github.com/ziko1905?tab=repositories", livePreview="https://github.com/ziko1905?tab=repositories") {
         this.title = title;
         this.description = description;
         this.imgSrc = require(`../media/images/${imgSrc}`);
-        
+        this.gitRepo = gitRepo;
+        this.livePreview = livePreview;
+    }
+    getLinks () {
+        return [
+            { url: this.gitRepo, imgSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", alt: `Repo of ${this.title}`},
+            { url: this.livePreview, imgSrc: require("../media/images/live-preview.svg"), alt: `Live preview of ${this.title}`}
+        ]
     }
 }
 
