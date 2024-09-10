@@ -37,3 +37,6 @@ const ABOUT_ME_LINKS = [
 
 const AboutMeLinks = new GeneralLinks(ABOUT_ME_LINKS, "about-me-links");
 AboutMeLinks.load(document.querySelector(".about-div"))
+
+const FooterLinks = new GeneralLinks(ABOUT_ME_LINKS, "footer-links");
+FooterLinks.load(document.querySelector(".contact-div"))

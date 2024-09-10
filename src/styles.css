@@ -161,3 +161,30 @@ footer {
 .bitmoji-portrait {
   justify-self: center;
 }
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer h3 {
+  font-size: 2.5rem;
+}
+
+footer p,
+footer a:not(a:has(img.icon)) {
+  display: block;
+  font-size: 1.7rem;
+  margin: 1.4rem 0;
+}
+
+.footer-links {
+  --links-height: 3rem;
+  justify-content: start;
+  gap: 2rem;
+}
+
+footer a:hover {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(96%) saturate(5473%)
+    hue-rotate(280deg) brightness(123%) contrast(128%);
+}
