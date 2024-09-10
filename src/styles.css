@@ -41,6 +41,10 @@ header {
   margin: 2rem 0;
 }
 
+.shadow {
+  box-shadow: 0 0 6px -3px;
+}
+
 .shadow-chl > * {
   box-shadow: 0 0 6px -3px;
 }
