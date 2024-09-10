@@ -188,3 +188,10 @@ footer a:hover {
   filter: brightness(0) saturate(100%) invert(19%) sepia(96%) saturate(5473%)
     hue-rotate(280deg) brightness(123%) contrast(128%);
 }
+
+@media (max-width: 1200px) {
+  :root {
+    --body-hor-margin: 5rem;
+    --body-ver-margin: 2rem;
+  }
+}
