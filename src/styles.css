@@ -16,3 +16,23 @@
   font-family: "playfair_displayregular", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  justify-content: center;
+}
+
+.portrait {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.about-div {
+  padding: 10px;
+  margin: 2rem 0;
+}
+
+.shadow-chl > * {
+  box-shadow: 0 0 6px -3px;
+}
