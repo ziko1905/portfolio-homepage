@@ -15,6 +15,7 @@
 :root {
   font-family: "playfair_displayregular", "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
+  --body-hor-margin: 10rem;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     rgba(249, 243, 29, 1) 0%,
     rgba(239, 0, 255, 1) 100%
   );
-  margin: 2rem 10rem;
+  margin: 2rem var(--body-hor-margin);
 }
 
 header {
@@ -51,4 +52,10 @@ header {
 
 .content-div {
   background-color: rgb(255, 255, 255);
+}
+
+.projects-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
 }
