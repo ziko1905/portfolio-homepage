@@ -1,5 +1,3 @@
-import { projectLst } from ".";
-
 class ProjectElement {
     constructor (prj)  {
         this.prj = prj;

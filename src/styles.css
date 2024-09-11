@@ -191,12 +191,49 @@ footer a:hover {
 
 @media (max-width: 1200px) {
   :root {
-    --body-hor-margin: 5rem;
-    --body-ver-margin: 2rem;
+    --body-hor-margin: 7rem;
+    --body-ver-margin: 3rem;
   }
+
+  header {
+    display: block;
+  }
+
+  .portrait-div {
+    display: none;
+  }
+
   .projects-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+  }
+  .portrait {
+    float: left;
+    margin: -9rem 0px 0px -5rem;
+    margin-right: 1rem;
+  }
+
+  .about-div {
+    margin-top: 8rem;
+    padding-bottom: 6rem;
+  }
+
+  .about-div span {
+    font-size: 4rem;
+    top: -6rem;
+    right: 8rem;
+    position: absolute;
+    color: white;
+    background-color: rgb(197, 0, 197);
+  }
+
+  .about-div h2 {
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .about-div .about-me-links {
+    display: none;
   }
 }
