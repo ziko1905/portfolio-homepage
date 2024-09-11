@@ -30,7 +30,11 @@
         <a href="tel: 5555555555">555-555-5555</a>
         <a href= "mailto: example@email.com"> example@email.com </a>
       </div>
-      <img class="bitmoji-portrait" src="../media/images/bitmoji-greeting.png" alt="">
+      <picture>
+        <source media="(max-width: 1199px)" srcset="../media/images/bitmoji-greeting-s.png">
+        <source media="(min-width: 1200px)" srcset="../media/images/bitmoji-greeting.png">
+        <img class="bitmoji-portrait" src="../media/images/bitmoji-greeting.png" alt="">
+      </picture>
     </footer>
   </body>
 </html>

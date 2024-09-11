@@ -158,8 +158,9 @@ footer {
   padding: var(--body-ver-margin) var(--body-hor-margin);
 }
 
-.bitmoji-portrait {
+footer picture {
   justify-self: center;
+  align-self: center;
 }
 
 footer a {
