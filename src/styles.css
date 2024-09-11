@@ -311,4 +311,8 @@ footer a:hover {
     justify-content: center;
     position: relative;
   }
+
+  .projects-div {
+    grid-template-columns: 1fr;
+  }
 }
