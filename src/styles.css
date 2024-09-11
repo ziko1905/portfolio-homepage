@@ -47,6 +47,7 @@ main {
   grid-column: 1;
   grid-row: 1;
   transform: scale(1.2);
+  box-shadow: var(--shadow);
 }
 
 .content-div span {
@@ -298,6 +299,9 @@ footer a:hover {
     background-color: transparent;
     grid-row: 1;
     justify-self: center;
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-bottom: -10px;
   }
 
   .portrait {
@@ -305,7 +309,6 @@ footer a:hover {
     transform: none;
     min-width: calc(100% - 2rem);
     margin: 0 1rem;
-    box-shadow: var(--shadow);
   }
 
   .about-div h2 {
