@@ -34,12 +34,6 @@ main {
   gap: 5rem;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  justify-content: center;
-}
-
 .portrait-div {
   display: flex;
   justify-content: center;
@@ -49,28 +43,39 @@ header {
 .portrait {
   max-width: 100%;
   object-fit: contain;
+  grid-column: 1;
+  grid-row: 1;
+  transform: scale(1.2);
 }
 
-.portrait-div span {
-  position: absolute;
+.content-div span {
   font-size: 3.5rem;
-  bottom: 2px;
   color: white;
+  justify-self: center;
+  align-self: end;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
 }
 
 .about-div {
-  padding: 1.4rem;
   margin: 2rem 0;
   position: relative;
+  display: grid;
+  grid-template-columns: 30rem auto;
 }
 
 .about-div h2 {
   font-size: 2.5rem;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .about-div p {
   font-size: 1.8rem;
   color: var(--grey-clr);
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .links-div {
@@ -190,6 +195,25 @@ footer a:hover {
     hue-rotate(280deg) brightness(123%) contrast(128%);
 }
 
+@media (min-width: 1201px) {
+  .about-div {
+    gap: 5rem;
+  }
+
+  .about-div span {
+    margin-bottom: -2rem;
+    font-size: 4.5rem;
+  }
+
+  .about-div h2 {
+    margin-top: 5rem;
+  }
+
+  .about-div p {
+    margin-top: 10rem;
+  }
+}
+
 @media (max-width: 1200px) {
   :root {
     --body-hor-margin: 7rem;
@@ -213,11 +237,14 @@ footer a:hover {
     float: left;
     margin: -9rem 0px 0px -5rem;
     margin-right: 1rem;
+    transform: scale(1);
   }
 
   .about-div {
+    display: block;
     margin-top: 8rem;
     padding-bottom: 6rem;
+    padding: 1.4rem;
   }
 
   .about-div span {
