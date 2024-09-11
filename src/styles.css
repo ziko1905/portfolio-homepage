@@ -315,4 +315,16 @@ footer a:hover {
   .projects-div {
     grid-template-columns: 1fr;
   }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
 }
