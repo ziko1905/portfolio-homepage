@@ -17,6 +17,7 @@
     "Arial Narrow", Arial, sans-serif;
   --body-hor-margin: 10rem;
   --body-ver-margin: 4rem;
+  --shadow: 0 0 6px -3px;
   --grey-clr: rgb(63, 63, 63);
 }
 
@@ -102,11 +103,11 @@ main {
 }
 
 .shadow {
-  box-shadow: 0 0 6px -3px;
+  box-shadow: var(--shadow);
 }
 
 .shadow-chl > * {
-  box-shadow: 0 0 6px -3px;
+  box-shadow: var(--shadow);
 }
 
 .content-div {
@@ -179,6 +180,18 @@ footer a:not(a:has(img.icon)) {
   display: block;
   font-size: 1.7rem;
   margin: 1.4rem 0;
+}
+
+footer a:not(a:has(img.icon)) {
+  display: flex;
+  text-wrap: nowrap;
+  gap: 1rem;
+}
+
+footer a:not(a:has(img.icon)) img {
+  height: 1.8rem;
+  width: 1.8rem;
+  align-self: center;
 }
 
 .footer-links {
@@ -290,8 +303,9 @@ footer a:hover {
   .portrait {
     box-sizing: border-box;
     transform: none;
-    min-width: 100%;
-    margin: 0 1em;
+    min-width: calc(100% - 2rem);
+    margin: 0 1rem;
+    box-shadow: var(--shadow);
   }
 
   .about-div h2 {
@@ -326,5 +340,9 @@ footer a:hover {
 
   .footer-links {
     justify-content: center;
+  }
+
+  footer a:not(a:has(img.icon)) img {
+    display: none;
   }
 }
